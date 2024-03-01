@@ -1,0 +1,91 @@
+/*const obj1={
+    fruit1 : "apple",
+}
+const obj2={
+    fruit2 : "banana",
+}
+const obj3={
+    fruit3 : "grapes",
+}
+const obj4={...obj1,...obj2,...obj3};
+console.log(obj4);*/
+
+//pass parameters to the function;
+
+
+/*const person={
+    firstname:"Lucas",
+    age :32,
+    address:
+    {
+        street:'123 Gadge st',
+        city:'London',
+    }
+
+}
+function abc({firstname,age,address})
+{
+    console.log(firstname+ age + address.city+address.street);
+}
+abc(person);*/
+
+// CallBack function
+
+/*function  abc(c)
+{
+   console.log(c) 
+}
+function xyz(a,b,x)
+{
+     
+     let c=a+b;
+     x(c);
+}
+xyz(10,20,abc);*/
+
+
+//call Back #2
+
+/*function abc(c)
+{
+  console.log("given number is even");
+}
+function xyz(a,q)
+{
+    let c;
+    
+    if( (c=a%2)==0)
+    {
+       q(c); 
+    }
+    
+}
+xyz(4,abc);*/
+
+//Find even nbr using call back
+function abc(q,...a)
+{
+    for(let i=0;i<=a.lenght;i++)
+    {
+        if(a[i]%2==0)
+        {
+              (a[i]);
+        }
+        else{
+            q(a[i])
+
+        }
+    }
+}
+function xyz()
+{
+    evencallback(q)
+    {
+    console.log("number",i,"is even");
+    }
+
+}
+abc(s,1,2,3,4,5,6,7,8,9,10);
+
+
+

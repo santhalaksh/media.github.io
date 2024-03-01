@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <style>
+                div{
+                    width:100px;
+                    height:100px;
+                    position: relative;
+                    background-color: orange;
+                    /*transition:2s ease 0.5s;*/
+                    animation-name:example;
+                    animation-duration:4s;
+                    animation-delay:4s;
+                    /*animation-direction:reverse;*/
+                    /*animation-direction:alternate-reverse;*/
+                    /*animation-iteration-count: 3;*/
+                    animation-iteration-count: infinite ;
+                   
+
+                }
+                 
+            
+                /*div:hover
+                {
+                    width:300px;
+                }*/
+                @keyframes example{
+                   /* from
+                    {
+                        background-color: rgba(197, 0, 112, 0.114);
+
+                    }
+                    to 
+                    {
+                        background-color: rgba(44, 122, 41, 0.775);
+                    }*/
+                    0%{background-color: red;left:0px;top:0px}
+                    25%{background-color:yellow;left:200px;top:0px}
+                    50%{background-color:blue;left:200px;top:200px}
+                    75%{background-color:green;left:0px;top:200px}
+                    100%{background-color:red;left:0px;top:0px}
+                }
+                #div{animation-timing-function:linear;background-color: aqua;}
+                #div{animation-timing-function:ease;background-color: rgba(0, 255, 102, 0.967);}
+                    #div{animation-timing-function:ease-in-out;background-color: rgb(255, 0, 212);}
+                    #div{animation-timing-function:ease-in;background-color: rgb(201, 80, 9);}
+
+                
+                
+            </style>
+           
+        </body>
+        <div></div>
+    </head>
+
+</html>
+
+
+
+
